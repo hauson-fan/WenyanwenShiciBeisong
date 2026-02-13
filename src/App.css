@@ -1,0 +1,230 @@
+/* 游戏专用样式 */
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 游戏元素动画 */
+.game-card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.game-option {
+  transition: all 0.2s ease;
+}
+
+.game-option:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.game-option:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* 正确/错误动画 */
+.correct-answer {
+  animation: pulse 0.5s ease;
+}
+
+.wrong-answer {
+  animation: shake 0.5s ease;
+}
+
+/* 连击动画 */
+.streak-animation {
+  animation: float 1s ease infinite;
+}
+
+/* 场景卡片效果 */
+.scene-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.scene-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* 文言文高亮 */
+.wenyan-highlight {
+  background: linear-gradient(120deg, #fef3c7 0%, #fde68a 100%);
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  color: #92400e;
+}
+
+/* 进度条动画 */
+.progress-bar-animated {
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 按钮光效 */
+.btn-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-glow::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s;
+}
+
+.btn-glow:active::after {
+  width: 200%;
+  height: 200%;
+}
+
+/* 成就解锁动画 */
+.achievement-unlock {
+  animation: fadeIn 0.5s ease, float 2s ease infinite;
+}
+
+/* 倒计时警告 */
+.countdown-warning {
+  animation: pulse 0.5s ease infinite;
+  color: #dc2626;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .game-container {
+    padding: 1rem;
+  }
+  
+  .scene-title {
+    font-size: 1.5rem;
+  }
+  
+  .wenyan-text {
+    font-size: 1rem;
+  }
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 选中效果 */
+.selected-option {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3);
+}
+
+/* 禁用状态 */
+.disabled-option {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 粒子效果容器 */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* 分数增加动画 */
+.score-increase {
+  position: absolute;
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 1.5rem;
+  animation: floatUp 1s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
