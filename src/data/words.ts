@@ -84,17 +84,17 @@ export const words: Word[] = [
       },
       {
         sense: "士兵，军队",
-        example: "赵亦盛设兵以待秦",
-        source: "《廉颇蔺相如列传》",
-        context: "渑池之会前，赵国部署军队防备秦国",
-        scene: "qinhan"
+        example: "起视四境，而秦兵又至矣",
+        source: "《六国论》",
+        context: "待起来一看四方边境，秦国的军队又到了",
+        scene: "xianqin"
       },
       {
         sense: "战争，军事行动",
-        example: "废先王之道，焚百家之言，以愚黔首；隳名城，杀豪杰；收天下之兵，聚之咸阳",
-        source: "《过秦论》",
-        context: "秦朝巩固统治的多项措施",
-        scene: "qinhan"
+        example: "废池乔木，犹厌言兵",
+        source: "《扬州慢》",
+        context: "战后的扬州，至今还厌恶谈到战争",
+        scene: "tangsong"
       }
     ]
   },
@@ -106,17 +106,17 @@ export const words: Word[] = [
     meanings: [
       {
         sense: "跑，奔跑",
-        example: "兔走触株，折颈而死",
-        source: "《韩非子·五蠹》",
-        context: "守株待兔的故事中，兔子奔跑时撞到树桩",
-        scene: "xianqin"
+        example: "双兔傍地走，安能辨我是雄雌",
+        source: "《木兰辞》",
+        context: "两只兔子一起贴近地面跑，怎能辨别各自的雄雌",
+        scene: "weijin"
       },
       {
         sense: "逃跑，逃走",
-        example: "老臣病足，曾不能疾走",
-        source: "《触龙说赵太后》",
-        context: "触龙解释自己不能快走是因为脚有毛病",
-        scene: "xianqin"
+        example: "老翁逾墙走，老妇出门看",
+        source: "《石壕吏》",
+        context: "老翁为躲避征兵而逃走",
+        scene: "tangsong"
       },
       {
         sense: "趋向，走向",
