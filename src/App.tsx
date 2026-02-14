@@ -199,7 +199,7 @@ function App() {
       <footer className="bg-white border-t mt-12">
         <div className="max-w-6xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
-            <p>© 2024 文言文实词时空书院 - 让文言文学习更有趣</p>
+            <p>© 2026 文言文实词时空书院 - 让文言文学习更有趣</p>
             <div className="flex items-center gap-4 mt-2 md:mt-0">
               <span>已掌握: {progress.masteredWords.length} 个实词</span>
               <span>等级: Lv.{progress.level}</span>
