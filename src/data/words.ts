@@ -70,7 +70,7 @@ export const scenes: Scene[] = [
 
 export const words: Word[] = [
   {
-    id: "bing",
+    id: "bing1",
     word: "兵",
     frequency: 5,
     etymology: "《说文》：兵，械也。从廾持斤，并力之皃。本义为兵器，后引申为士兵、战争。",
@@ -99,7 +99,7 @@ export const words: Word[] = [
     ]
   },
   {
-    id: "zou",
+    id: "zou1",
     word: "走",
     frequency: 5,
     etymology: "《说文》：走，趋也。从夭从止。像人摆动双臂奔跑之形。古义为跑，今义为行走。",
@@ -128,43 +128,43 @@ export const words: Word[] = [
     ]
   },
   {
-    id: "wang",
+    id: "wang1",
     word: "亡",
     frequency: 4,
     etymology: "《说文》：亡，逃也。从入从乚。像人隐藏在角落之形。本义为逃亡，后引申为死亡、灭亡、失去。",
     meanings: [
       {
         sense: "逃亡，逃跑",
-        example: "今亡亦死，举大计亦死",
-        source: "《陈涉世家》",
-        context: "陈涉分析起义前的处境：逃跑也是死，起义也是死",
+        example: "沛公今事有急，亡去不义",
+        source: "《鸿门宴》",
+        context: "刘邦遇到危急的事，但逃走是不信用的",
         scene: "qinhan"
       },
       {
-        sense: "死亡",
-        example: "此诚危急存亡之秋也",
-        source: "《出师表》",
-        context: "诸葛亮告诫后主，这是国家生死存亡的关键时刻",
-        scene: "weijin"
+        sense: "灭亡",
+        example: "日削月割，以趋于亡",
+        source: "《六国论》",
+        context: "六国频频向秦国割地，走向灭亡",
+        scene: "xianqin"
       },
       {
-        sense: "灭亡，消亡",
+        sense: "使……灭亡",
         example: "吞二周而亡诸侯",
         source: "《过秦论》",
         context: "秦国吞并东周西周，使诸侯国灭亡",
-        scene: "qinhan"
+        scene: "xianqin"
       },
       {
         sense: "失去，丢失",
-        example: "亡羊补牢，未为迟也",
-        source: "《战国策》",
-        context: "羊丢失了再去修补羊圈，还不算晚",
+        example: "秦无亡矢遗镞之费",
+        source: "《过秦论》",
+        context: "秦国在与六国的战争中，没有箭的耗费",
         scene: "xianqin"
       }
     ]
   },
   {
-    id: "shu",
+    id: "shu1",
     word: "属",
     frequency: 4,
     etymology: "《说文》：属，连也。从尾蜀声。本义为连接，引申为归属、类属、嘱托等义。",
@@ -200,7 +200,7 @@ export const words: Word[] = [
     ]
   },
   {
-    id: "yi",
+    id: "yi1",
     word: "诣",
     frequency: 3,
     etymology: "《说文》：诣，候至也。从言旨声。本义为前往拜访，特指到尊长那里去。",
@@ -222,7 +222,7 @@ export const words: Word[] = [
     ]
   },
   {
-    id: "xie",
+    id: "xie1",
     word: "谢",
     frequency: 4,
     etymology: "《说文》：谢，辞去也。从言射声。本义为辞谢、拒绝，引申为道歉、感谢、衰亡等义。",
@@ -258,29 +258,36 @@ export const words: Word[] = [
     ]
   },
   {
-    id: "zhe",
-    word: "谪",
+    id: "zao1",
+    word: "造",
     frequency: 3,
-    etymology: "《说文》：谪，罚也。从言啇声。本义为谴责、处罚，特指官吏因罪被降职或流放。",
+    etymology: "《说文》：造，就也。从辵吿声。本义为到，往某地去，引申为做、制作等义。",
     meanings: [
       {
-        sense: "贬官，降职外放",
-        example: "滕子京谪守巴陵郡",
-        source: "《岳阳楼记》",
-        context: "滕子京被贬官到巴陵郡做太守",
-        scene: "tangsong"
+        sense: "往，到……去",
+        example: "径造庐访成",
+        source: "《促织》",
+        context: "少年来到成名家斗蟋蟀",
+        scene: "mingqing"
       },
       {
-        sense: "谴责，责备",
-        example: "公输盘之攻械尽，子墨子之守圉有余，公输盘诎，而曰：吾知所以距子矣，吾不言",
-        source: "《公输》",
-        context: "公输盘被墨子驳倒，受到道义上的谴责",
+        sense: "制定",
+        example: "怀王使屈原造为宪令",
+        source: "《屈原列传》",
+        context: "楚怀王让屈原制定国家法令。",
         scene: "xianqin"
+      },
+      {
+        sense: "造化",
+        example: "造化钟神秀，阴阳割昏晓",
+        source: "《望岳》",
+        context: "杜甫见证大自然将神奇和秀丽都集中于泰山。",
+        scene: "tangsong"
       }
     ]
   },
   {
-    id: "qian",
+    id: "qian1",
     word: "迁",
     frequency: 4,
     etymology: "《说文》：迁，登也。从辵瞢声。本义为向高处移动，引申为升官、贬谪、迁移等义。",
@@ -309,7 +316,7 @@ export const words: Word[] = [
     ]
   },
   {
-    id: "shi",
+    id: "shi1",
     word: "适",
     frequency: 3,
     etymology: "《说文》：适，之也。从辵啻声。本义为往、到……去，引申为出嫁、适合、恰好等义。",
@@ -338,7 +345,7 @@ export const words: Word[] = [
     ]
   },
   {
-    id: "rang",
+    id: "rang1",
     word: "让",
     frequency: 3,
     etymology: "《说文》：让，相责让也。从言襄声。本义为责备，引申为谦让、礼让、让给等义。",
